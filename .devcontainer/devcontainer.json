@@ -1,0 +1,25 @@
+{
+  "name": "AI Scientific Lab",
+
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+
+  "workspaceFolder": "/lab",
+
+  "mounts": ["source=${localWorkspaceFolder},target=/lab,type=bind"],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "charliermarsh.ruff"
+      ]
+    }
+  },
+
+  "postCreateCommand": "uv sync --frozen",
+
+  "remoteUser": "root"
+}

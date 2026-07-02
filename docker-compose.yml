@@ -1,0 +1,18 @@
+services:
+  lab:
+    build:
+      context: .
+      target: runtime
+
+    container_name: ai-scientific-lab
+
+    working_dir: /lab
+
+    volumes:
+      - .:/lab
+
+    ports:
+      - "8888:8888"
+
+    tty: true
+    stdin_open: true

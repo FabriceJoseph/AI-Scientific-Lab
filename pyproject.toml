@@ -1,0 +1,19 @@
+[project]
+name = "ai-scientific-lab"
+version = "0.1.0"
+description = "Personal scientific computing laboratory"
+requires-python = ">=3.12"
+
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "torch",
+    "jupyterlab",
+    "tqdm"
+]
+
+[tool.ruff]
+line-length = 88
